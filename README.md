@@ -1,6 +1,6 @@
-# TODO: THEME TITLE
+# byplayer-sg
 
-TODO: THEME DESCRIPTION
+rabbit theme for byplayer at SG.rb
 
 ## For author
 
