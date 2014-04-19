@@ -72,6 +72,8 @@ match(Slide, HeadLine) do |heads|
   heads.delete_post_draw_proc_by_name(name)
 
   heads.horizontal_centering = true
+  heads.prop_set("weight", "normal")
+  prop_set("size", @small_font_size)
 end
 
 match(Slide, Body) do |bodies|
@@ -103,4 +105,3 @@ include_theme("icon")
 @slide_footer_info_left_text ||= canvas.title.gsub(/\n/, '')
 @slide_footer_info_right_text ||= "Powered by Rabbit #{Rabbit::VERSION}"
 include_theme("slide-footer-info")
-
