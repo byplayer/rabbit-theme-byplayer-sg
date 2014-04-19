@@ -24,6 +24,7 @@ set_progress_background(base_background_color)
 @default_description_item1_mark_color = base_color
 @default_block_quote_item1_mark_color = base_color
 @description_term_line_color = base_color
+@default_headline_line_color = "#000000"
 
 @default_emphasis_color = base_dark_color
 
@@ -68,8 +69,8 @@ match(TitleSlide, Title) do |titles|
 end
 
 match(Slide, HeadLine) do |heads|
-  name = "head-line"
-  heads.delete_post_draw_proc_by_name(name)
+  # name = "head-line"
+  # heads.delete_post_draw_proc_by_name(name)
 
   heads.horizontal_centering = true
   heads.prop_set("weight", "normal")
