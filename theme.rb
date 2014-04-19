@@ -59,6 +59,11 @@ add_image_path("rabbit-images")
 
 include_theme("default")
 
+match("**", Paragraph) do |texts|
+  texts.margin_top = @space / 10.0
+  texts.margin_bottom = @space / 10.0
+end
+
 match(TitleSlide, "*") do |elements|
   elements.horizontal_centering = false
   elements.align = :center
